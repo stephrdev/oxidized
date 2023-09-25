@@ -14,6 +14,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - pagination for http source (@davama)
 - model for Ericsson Miniling 6600 series (@schouwenburg)
 - model for Mimosa B11 (@ritzbhuj)
+- Add serial number collection to Opengear (@ermuller)
 + Added ability to send mail with the Docker container
 + Documentation to send mail with hooks
 
@@ -38,6 +39,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Remove constantly updating dates from backup of Adtran config (@davesbell)
 - fixed prompt for Cumulus to allow usernames with dots and dashes (@ktims)
 - fixed source http when source is librenms (@davama)
+- Fix missing configuration for Opengear (@ermuller)
 
 ## [0.29.1 - 2023-04-24]
 
