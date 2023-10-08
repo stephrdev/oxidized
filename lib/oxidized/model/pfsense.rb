@@ -1,6 +1,11 @@
 class PfSense < Oxidized::Model
   using Refinements
 
+  # Hotfix issue according to https://github.com/ytti/oxidized/issues/2771#issuecomment-1667905749
+  cmd :all do |cfg|
+    cfg.cut_head(lines = 0)
+  end
+
   # use other use than 'admin' user, 'admin' user cannot get ssh/exec. See issue #535
 
   cmd :secret do |cfg|
