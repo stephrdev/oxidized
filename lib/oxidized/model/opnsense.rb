@@ -1,6 +1,11 @@
 class OpnSense < Oxidized::Model
   using Refinements
 
+  # Hotfix issue according to https://github.com/ytti/oxidized/issues/2771#issuecomment-1667905749
+  cmd :all do |cfg|
+    cfg.cut_head(lines = 0)
+  end
+
   # minimum required permissions: "System: Shell account access"
   # must enable SSH and password-based SSH access
 
